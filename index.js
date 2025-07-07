@@ -7,9 +7,9 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://your-frontend-domain.com', // update after deploying frontend
-  credentials: true
+  origin: '*'
 }));
+
 app.use(express.json());
 
 // ✅ Create pool connection
